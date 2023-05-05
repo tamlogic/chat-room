@@ -1,21 +1,33 @@
 {
-  "name": "zoom-clone",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "livestream-server",
+  "version": "0.0.1",
+  "description": "A conference call implementation using WebRTC, Socket.io and Node.js.",
+  "main": "src/app.js",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.17.1",
-    "peer": "^0.5.3",
-    "peerjs": "^1.4.7",
-    "socket.io": "^2.5.0",
-    "uuid": "^8.3.2"
-  }
+    "express": "^4.17.3",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirsanni/livestream-server.git"
+  },
+  "keywords": [
+    "LiveStream",
+    "Server"
+  ],
+  "author": "Amir Sanni <amirsanni@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirsanni/livestream-server/issues"
+  },
+  "homepage": "https://github.com/amirsanni/livestream-server#readme"
 }
